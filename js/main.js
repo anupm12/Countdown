@@ -1,6 +1,6 @@
 var targetDate = new Date("27 nov 2020").getTime();
 
-function countdown() {
+function counter() {
   var dateToday = new Date().getTime();
 
   var diff = targetDate - dateToday;
@@ -15,5 +15,5 @@ function countdown() {
 
   console.log(days, hours, minutes, seconds);
 }
-countdown();
-setInterval(countdown, 1000);
+counter();
+setInterval(counter, 1000);
