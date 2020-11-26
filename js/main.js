@@ -15,10 +15,15 @@ function counter() {
 
   // console.log(days, hours, minutes, seconds);
 
-  document.getElementById("day").innerHTML = days;
-  document.getElementById("hour").innerHTML = hours;
-  document.getElementById("minute").innerHTML = minutes;
-  document.getElementById("second").innerHTML = seconds;
+  document.getElementById("day").innerHTML = formatTime(days);
+  document.getElementById("hour").innerHTML = formatTime(hours);
+  document.getElementById("minute").innerHTML = formatTime(minutes);
+  document.getElementById("second").innerHTML = formatTime(seconds);
 }
+
+function formatTime(x) {
+  return x < 10 ? "0" + x : x;
+}
+
 counter();
 setInterval(counter, 1000);
