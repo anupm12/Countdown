@@ -1,4 +1,4 @@
-var targetDate = new Date("27 dec 2020").getTime();
+var targetDate = new Date(window.prompt()).getTime();
 
 function counter() {
   var dateToday = new Date().getTime();
