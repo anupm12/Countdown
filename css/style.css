@@ -1,15 +1,29 @@
-* {
+html {
   overflow: hidden;
 }
+
 body {
-  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 #particles-js {
   background: #000000;
   background: -webkit-linear-gradient(to left, #434343, #000000);
   background: linear-gradient(to left, #434343, #000000);
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.counter {
+  /* position: absolute; */
+  /* border: #ffffff solid 1px; */
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 16vh;
+  margin: 0;
+}
+
+.c-border {
+  border-right: #ffffff solid 1px;
 }
