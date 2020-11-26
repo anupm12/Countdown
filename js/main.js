@@ -3,19 +3,15 @@ var targetDate = new Date(window.prompt()).getTime();
 function counter() {
   var dateToday = new Date().getTime();
 
-  var diff = targetDate - dateToday;
+  var diff = (targetDate - dateToday) / 1000;
 
-  var days = Math.floor(diff / (1000 * 24 * 60 * 60));
-  days = ("0" + days).slice(-2);
+  var days = Math.floor(diff / 3600 / 24);
 
-  var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  hours = ("0" + hours).slice(-2);
+  var hours = Math.floor(diff / 3600) % 24;
 
-  var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  minutes = ("0" + minutes).slice(-2);
+  var minutes = Math.floor(diff / 60) % 60;
 
-  var seconds = Math.floor(1 + (diff % (1000 * 60)) / 1000);
-  seconds = ("0" + seconds).slice(-2);
+  var seconds = Math.floor(1 + (diff % 60));
 
   // console.log(days, hours, minutes, seconds);
 
