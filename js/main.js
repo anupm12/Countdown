@@ -1,6 +1,7 @@
-var targetDate = new Date(
-  window.prompt("Date Format - 31 dec 2020", "12 jan 2021")
-).getTime();
+var targetDate = new Date("12 jan 2021").getTime();
+
+localStorage.setItem("date", targetDate);
+console.log(localStorage.getItem("date"));
 
 function counter() {
   var dateToday = new Date().getTime();

@@ -24,22 +24,33 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container-fluid parent" id="particles-js">
+    <div class="container-fluid container-c" id="particles-js">
+      <!-- date picker -->
+      <form class="form-inline">
+        <div class="form-group mb-0 mt-3 p-3">
+          <input type="date" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-outline-primary mt-3 p-3">
+          <span>SUBMIT</span>
+        </button>
+      </form>
+
+      <!-- counter -->
       <div class="row counter">
         <div class="col mt-4 mb-4 c-border text-center">
-          <h1 id="day">130</h1>
+          <h1 id="day">00</h1>
           <span>DAYS</span>
         </div>
         <div class="col mt-4 mb-4 c-border text-center">
-          <h1 id="hour">12</h1>
+          <h1 id="hour">00</h1>
           <span>HOURS</span>
         </div>
         <div class="col mt-4 mb-4 c-border text-center">
-          <h1 id="minute">13</h1>
+          <h1 id="minute">00</h1>
           <span>MINUTES</span>
         </div>
         <div class="col mt-4 mb-4 text-center">
-          <h1 id="second">12</h1>
+          <h1 id="second">00</h1>
           <span>SECONDS</span>
         </div>
       </div>
@@ -47,11 +58,11 @@
 
     <script src="/libraries/particles.js-master/particles.js"></script>
     <script src="/js/assets/particles.js/app.js"></script>
-    <script src="js/main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

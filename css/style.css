@@ -14,7 +14,40 @@ body {
   height: 100vh;
 }
 
-.parent {
+.form-group input {
+  background: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.form-group input[type="date"]:focus {
+  background: transparent;
+  color: #ffffff;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(100);
+}
+
+.form-inline button {
+  padding: 0;
+}
+
+.form-inline button span {
+  font-size: 12px;
+}
+
+.form-inline button,
+.form-inline button:hover {
+  color: #ffffff;
+  border: none;
+  background: none;
+}
+
+.container-c {
   position: relative;
 }
 
@@ -29,8 +62,12 @@ body {
 }
 
 h1 {
-  font-size: 16vh;
+  font-size: 55px;
   margin: 0;
+}
+
+span {
+  font-size: 15px;
 }
 
 .c-border {
