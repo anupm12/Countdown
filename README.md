@@ -2,9 +2,7 @@
 <p>
 </p>
 
-> Start a countdown to any date
-
-### 🏠 [Homepage](cool-counter.netlify.app)
+> Start a countdown to any date of your choice
 
 ### ✨ [Demo](cool-counter.netlify.app)
 
