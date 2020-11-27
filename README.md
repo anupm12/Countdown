@@ -1,1 +1,1 @@
-# Countdown
+# JS Counter
