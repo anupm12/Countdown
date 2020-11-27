@@ -1,4 +1,6 @@
-var targetDate = new Date(window.prompt()).getTime();
+var targetDate = new Date(
+  window.prompt("Date Format - 31 dec 2020", "12 jan 2021")
+).getTime();
 
 function counter() {
   var dateToday = new Date().getTime();
