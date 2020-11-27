@@ -4,7 +4,7 @@
 
 > Start a countdown to any date of your choice
 
-### ✨ DEMO (https://cool-counter.netlify.app)
+### ✨ DEMO https://cool-counter.netlify.app
 
 ## Author
 
