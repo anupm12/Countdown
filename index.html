@@ -27,19 +27,21 @@
     <div class="container-fluid container-c" id="particles-js">
       <!-- date picker -->
       <form class="form-inline" action="#" id="myForm">
-        <div class="form-group mb-0 mt-3 p-3">
+        <div class="form-group mb-0 p-3">
           <input type="date" class="form-control" id="dateVal" />
+          <button
+            type="submit"
+            class="btn btn-outline-primary pl-3"
+            id="submitDate"
+          >
+            <span>SUBMIT</span>
+          </button>
         </div>
-        <button
-          type="submit"
-          class="btn btn-outline-primary mt-3 p-3"
-          id="submitDate"
-        >
-          <span>SUBMIT</span>
-        </button>
       </form>
 
-      <button class="btn btn-primary" id="forget">Forget</button>
+      <div class="pt-3" style="z-index: -10">
+        <button class="btn btn-primary" id="forget">Forget</button>
+      </div>
 
       <!-- counter -->
       <div class="row counter">

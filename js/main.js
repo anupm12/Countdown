@@ -47,13 +47,13 @@ function counter() {
 
 function startHere() {
   if (localStorage.getItem("date")) {
-    document.getElementById("myForm").style.visibility = "hidden";
-    document.getElementById("forget").style.visibility = "visible";
+    document.getElementById("myForm").style.display = "none";
+    document.getElementById("forget").style.display = "inline";
     counter();
     setInterval(counter, 1000);
   } else {
-    document.getElementById("myForm").style.visibility = "visible";
-    document.getElementById("forget").style.visibility = "hidden";
+    document.getElementById("myForm").style.display = "block";
+    document.getElementById("forget").style.display = "none";
   }
 }
 
