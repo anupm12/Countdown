@@ -49,6 +49,7 @@ function startHere() {
   if (localStorage.getItem("date")) {
     document.getElementById("myForm").style.display = "none";
     document.getElementById("forget").style.display = "inline";
+    targetDate = localStorage.getItem("date");
     counter();
     setInterval(counter, 1000);
   } else {
