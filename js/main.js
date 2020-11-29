@@ -1,8 +1,5 @@
 var targetDate = 0;
 
-// localStorage.setItem("date", targetDate);
-// console.log(localStorage.getItem("date"));
-
 function convertDate(date) {
   let x = date;
   let monthNames = [
@@ -49,13 +46,30 @@ function counter() {
 }
 
 function startHere() {
-  let inputDate = document.querySelector("#dateVal").value;
-  targetDate = new Date(convertDate(inputDate)).getTime();
-  console.log(targetDate);
-  counter();
-  setInterval(counter, 1000);
+  if (localStorage.getItem("date")) {
+    document.getElementById("myForm").style.visibility = "hidden";
+    document.getElementById("forget").style.visibility = "visible";
+    counter();
+    setInterval(counter, 1000);
+  } else {
+    document.getElementById("myForm").style.visibility = "visible";
+    document.getElementById("forget").style.visibility = "hidden";
+  }
 }
 
 document.getElementById("submitDate").onclick = function () {
+  let inputDate = document.querySelector("#dateVal").value;
+  targetDate = new Date(convertDate(inputDate)).getTime();
+  localStorage.setItem("date", targetDate);
+  startHere();
+};
+
+document.getElementById("forget").onclick = function () {
+  localStorage.removeItem("date");
+  window.location.reload();
+  startHere();
+};
+
+window.onload = function () {
   startHere();
 };

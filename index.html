@@ -26,7 +26,7 @@
   <body>
     <div class="container-fluid container-c" id="particles-js">
       <!-- date picker -->
-      <form class="form-inline" action="#">
+      <form class="form-inline" action="#" id="myForm">
         <div class="form-group mb-0 mt-3 p-3">
           <input type="date" class="form-control" id="dateVal" />
         </div>
@@ -34,11 +34,12 @@
           type="submit"
           class="btn btn-outline-primary mt-3 p-3"
           id="submitDate"
-          onclick="startHere()"
         >
           <span>SUBMIT</span>
         </button>
       </form>
+
+      <button class="btn btn-primary" id="forget">Forget</button>
 
       <!-- counter -->
       <div class="row counter">
